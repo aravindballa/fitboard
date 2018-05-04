@@ -1,47 +1,16 @@
 import React from 'react';
 import styled from 'styled-components/native';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
 import {Avatar} from 'react-native-elements';
 
-const CardWrap = styled.View`
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 2px 4px 6px black;
-  elevation: 6;
-  display: flex;
-  flex-direction: row;
-  padding: 20px;
-`
-
-const UserAvatar = styled.View`
-  display: flex;
-  justify-content: center;
-`
-
-const UserDetails = styled.View`
-  flex: 1;
-`
-  
-const UserName = styled.Text`
-  text-align: center;
-  font-weight: bold;
-  font-size: 24px;
-  `
-  
-const PushupsLabel = styled.Text`
-  text-align: center;
-  font-size: 14px;
-  font-weight: bold;
-  color: #8350E1;
-  margin-top: 30px;
-  `
-const PushupsValue = styled.Text`
-  text-align: center;
-  font-size: 56px;
-  margin: 0;
-  font-weight: 100;
-`
-
+import {
+  CardWrap,
+  UserAvatar,
+  UserDetails,
+  UserName,
+  PushupsLabel,
+  PushupsValue
+} from './styles'
 export default class UserInfo extends React.Component {
   state = {
     username: 'Aravind Balla',
@@ -64,7 +33,7 @@ export default class UserInfo extends React.Component {
         <UserDetails>
           <UserName>{this.state.username}</UserName>
           <View>
-            <PushupsLabel>PUSHUP</PushupsLabel>
+            <PushupsLabel>PUSHUPS</PushupsLabel>
             <PushupsValue>80</PushupsValue>
           </View>
         </UserDetails>

@@ -13,7 +13,7 @@ const App = () => (
 const styles = StyleSheet.create({
   container: {
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#eee',
+    backgroundColor: '#fff',
     flex: 1
   },
 });

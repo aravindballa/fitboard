@@ -4,6 +4,7 @@ import styled from 'styled-components/native';
 import { LinearGradient } from 'expo';
 
 import UserInfo from './UserInfo';
+import FriendsInfo from './FriendsInfo';
 
 const Container = styled.View`
   padding: 0 20px;
@@ -15,13 +16,11 @@ export default class Home extends React.Component {
     return (
       <View>
         <LinearGradient
-          style={{ height: 200 }}
+          style={{ height: 180 }}
           colors={['#8350E1', '#A970EC']}
         />
-        <Container>
-          <UserInfo />
-          <Text>Open up App.js to start working on your app!</Text>
-        </Container>
+        <UserInfo />
+        <FriendsInfo />
       </View>
     );
   }
