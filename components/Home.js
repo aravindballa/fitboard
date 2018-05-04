@@ -1,32 +1,28 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import styled from 'styled-components';
+import { Text, View } from 'react-native';
+import styled from 'styled-components/native';
+import { LinearGradient } from 'expo';
 
-const Header = styled.View`
-    height: 200px;
-    background-color: linear-gradient(180deg, #8350E1 0%, #A970EC 100%, rgba(169, 112, 236, 0) 100%, rgba(169, 112, 236, 0) 100%, #A970EC 100%);
-`
-const SText = styled.Text`
-    color: red;
+import UserInfo from './UserInfo';
+
+const Container = styled.View`
+  padding: 0 20px;
+  margin-top: -100px;
 `
 
 export default class Home extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Header>
-            <SText>Open up App.js to start working on your app!</SText>
-        </Header>
+      <View>
+        <LinearGradient
+          style={{ height: 200 }}
+          colors={['#8350E1', '#A970EC']}
+        />
+        <Container>
+          <UserInfo />
+          <Text>Open up App.js to start working on your app!</Text>
+        </Container>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
