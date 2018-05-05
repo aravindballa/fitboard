@@ -1,5 +1,5 @@
 import styled from 'styled-components/native';
-import {View, Text} from 'react-native';
+import { View, Text } from 'react-native';
 
 export const CardWrap = styled.View`
   background-color: white;
@@ -20,13 +20,13 @@ export const UserAvatar = styled.View`
 export const UserDetails = styled.View`
   flex: 1;
 `
-  
+
 export const UserName = styled.Text`
   text-align: center;
   font-weight: bold;
   font-size: 24px;
   `
-  
+
 export const PushupsLabel = styled.Text`
   text-align: center;
   font-size: 14px;

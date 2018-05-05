@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, TouchableHighlight } from 'react-native';
 import styled from 'styled-components/native';
-import {Avatar} from 'react-native-elements';
+import { Avatar } from 'react-native-elements';
 
 const Wrap = styled.View`
   padding: 15px 20px;
@@ -27,23 +27,23 @@ const FriendScore = styled.Text`
 `
 
 export default class FriendInfo extends React.Component {
-    render() {
-      const {username, avatarUrl, score} = this.props;
+  render() {
+    const { username, avatarUrl, score } = this.props;
 
-      return (
-        <TouchableHighlight onPress={() => {}} underlayColor="#eee">
-          <Wrap>
-            <Avatar
-              medium
-              rounded
-              source={{
-                uri: avatarUrl
-              }}
-            />
-            <FriendName>{username}</FriendName>
-            <FriendScore>{score}</FriendScore>
-          </Wrap>
-        </TouchableHighlight>
-      );
-    }
+    return (
+      <TouchableHighlight onPress={() => { }} underlayColor="#eee">
+        <Wrap>
+          <Avatar
+            medium
+            rounded
+            source={{
+              uri: avatarUrl
+            }}
+          />
+          <FriendName>{username}</FriendName>
+          <FriendScore>{score}</FriendScore>
+        </Wrap>
+      </TouchableHighlight>
+    );
   }
+}
