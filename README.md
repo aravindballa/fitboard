@@ -1,4 +1,4 @@
-# Fitboard
+<img width="192" src="https://raw.githubusercontent.com/aravindballa/fitboard/master/assets/icon.png" style="align: center"/>
 
 _WIP_
 
