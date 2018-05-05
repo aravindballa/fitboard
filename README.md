@@ -1,4 +1,4 @@
-<img width="192" src="https://raw.githubusercontent.com/aravindballa/fitboard/master/assets/icon.png" style="align: center"/>
+<p align="center"><img width="192" src="https://raw.githubusercontent.com/aravindballa/fitboard/master/assets/fitboard-icon.png" alt="fitboard"/></p>
 
 _WIP_
 
